@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="pereira.png">
+        <form id="mainForm" novalidate>
+            <h2>VERIFIQUE SUS DATOS</h2>
+            <div class="form-control">
+                <label for="name">NOMBRE</label>
+                <input type="text" id="name" placeholder="Ingrese su nombre" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="email">CORREO</label>
+                <input type="email" id="email" placeholder="Ingrese su email" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="phone">CELULAR</label>
+                <input type="tel" id="phone" placeholder="Ingrese su celular" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="password">CONTRASEÑA</label>
+                <input type="password" id="password" placeholder="Ingrese su contraseña" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="message">MENSAJE</label>
+                <textarea id="message" placeholder="Ingrese un mensaje"></textarea>
+                <i class="icon"></i>
+            </div>
+
+            <button type="submit">VALIDAR</button>
+
+        </form>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>FELICIDADES!</h2>
+            <p>SUS DATOS HAN SIDO LEIDOS CORRECTAMENTE.</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
